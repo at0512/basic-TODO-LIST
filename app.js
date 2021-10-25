@@ -40,6 +40,8 @@ deletedbutton.classList.add('delete-btn')
 tododiv.appendChild(deletedbutton)   
 
 unordered.appendChild(tododiv) 
+var itemsdel = unordered.childNodes.length 
+itemsbuton.innerHTML = +itemsdel - 1+" items"
 
  //clearing input 
 inp.value = ""
