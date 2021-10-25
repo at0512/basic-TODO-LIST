@@ -1,0 +1,214 @@
+*{
+    margin: 0; 
+    padding: 0;  
+    box-sizing: border-box;
+    color: unset; 
+}  
+body{ 
+    background: white;
+    color: black; 
+    font-family: sans-serif; 
+    min-height: 100vh;
+}  
+.dark{
+    background: black; 
+    color: white;
+}
+h1{
+    font-size: 2.5rem;  
+    position: relative; 
+    top: 50px; 
+    right: 110px;  
+    
+    
+
+} 
+h1,form{
+    min-height: 20vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    color: black !important;
+} 
+
+
+form input, form button{
+    padding: 0.5rem ; 
+    font-size: 1.5rem; 
+    border: none; 
+    outline: none;
+}  
+form button{
+    cursor: pointer;
+}  
+header{ 
+    background-image:url(./Assets/day.jpeg);
+    height: 300px;  
+    background-size: cover;  
+    background-position: center; 
+}
+.container{ 
+   
+ display: flex;  
+ flex-direction: column;
+ justify-content: center;  
+ align-items: center;  
+} 
+.todo{  
+    width: 20vw; 
+    margin: 0.5rem; 
+    font-size: 1 rem; 
+    display: flex;  
+    justify-content: space-between;
+
+} 
+.todo li{
+    flex: 1;
+} 
+li{
+  text-transform: uppercase; 
+  list-style: none; 
+} 
+li:not(:last-child){
+  margin-bottom: 15px ;
+} 
+li:before{ 
+  content: "\2713";
+}
+.complete-btn, .delete-btn{   
+    width: 20px; 
+    height: 20px;
+
+    border: none;
+    cursor: pointer;
+}  
+.complete-btn{
+    background: green; 
+    color: white;
+}  
+.delete-btn{
+    background: orangered; 
+    color: white;
+}
+
+.fa-trash{
+    pointer-events: none;  
+    
+}  
+
+.fa-check{
+    pointer-events: none;  
+    
+} 
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+} 
+.filter{  
+    
+    background: white;  
+    margin: auto; 
+    width: 25%;  
+    height: 25%;
+    border-radius: 10px;
+    display: flex; 
+    justify-content: space-between; 
+    color: grey;
+
+}
+.container-filter{  
+    margin: 0; 
+    padding: 0; 
+    outline: 0;  
+    display: flex; 
+    
+} 
+.all-btn{
+    height: 40px;  
+    padding: 5px;
+    border: 0; 
+    outline: 0;  
+    cursor: pointer;
+} 
+.completed-btn{
+    height: 40px;  
+    padding: 5px;
+    border: 0; 
+    outline: 0;  
+    cursor: pointer;
+} 
+.pending-btn{
+    height: 40px;  
+    padding: 5px;
+    border: 0; 
+    outline: 0;  
+    cursor: pointer;
+}
+.clear-todo{ 
+    height: 40px; 
+    border: 0; 
+    outline: 0; 
+    cursor: pointer;
+
+}  
+.all-btn.dark, .pending-btn.dark, .complete-btn.dark, .clear-todo.dark{
+    background: black; 
+    color: white;
+}
+.item-todo{
+    border: 0; 
+    padding-top: 10px;
+}  
+a{
+    text-decoration: none;
+}
+
+img.social{
+    width: 30px; 
+    margin: 10px;
+
+} 
+footer{
+    background-color: white ; 
+    font-size: 1.5rem;
+    color: black; 
+    display: flex;  
+    align-items: center;  
+    justify-content: space-between; 
+    margin: 0px; 
+    position: absolute;
+    bottom: 0px; 
+    width: 100%; 
+} 
+.container-darkbtn{
+    position: absolute; 
+  left: 61%; 
+  top: 15%;
+  } 
+  .toggle-btn{
+    width: 80px;
+    height: 40px;
+    background: grey; 
+    border-radius: 30px; 
+    padding: 5px; 
+    transition: all 300ms ease-in-out;
+  } 
+  .toggle-btn > .innrercircle{ 
+   width: 30px; 
+   height: 30px; 
+   background: white; 
+   border-radius: 50%; 
+   transition: all 300ms ease-in-out;
+  
+  } 
+  .toggle-btn.active{
+    background: skyblue;
+  
+  } 
+  .toggle-btn.active > .innrercircle{
+    margin-left: 40px;
+  } 
+  .filter.dark{
+      background: black; 
+      color: white;
+  }

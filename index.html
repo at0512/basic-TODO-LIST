@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list</title>
+</head>
+<body>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+   <link rel="stylesheet" href="./style.css"> 
+   <script src="./app.js" defer></script> 
+   <header> 
+    
+   <h1> Todo list</h1> 
+   <form > 
+       <input type="text" class="todo-input"> 
+       <button class="todo-button" type="submit">  
+
+           <i class="fas fa-plus-square"></i>
+       </button>
+   </form>    
+   <div class="filter" >  
+       <div class="item-todo"> items</div>
+       <div class="container-filter"> 
+           <button class="all-btn"> All</button> 
+           <button class="completed-btn">Completed</button> 
+           <button class="pending-btn">Pending</button>
+       </div> 
+       <button class="clear-todo">Clear</button>
+   </div>
+   <div class="todo-container">  
+    <ul  class="container"> 
+    </ul>
+
+</div>
+   </header>   
+   <div class="container-darkbtn"> 
+    <div class="toggle-btn" onclick="this.classList.toggle('active')">  
+        <div class="innrercircle"> 
+
+        </div>
+    </div>
+</div> 
+   <footer> 
+    <div>
+        <a href="https://www.youtube.com/" > 
+             AthulRaj 
+        </a> 
+    </div>
+        <div>           
+             <a href="https://www.instagram.com/__heartless_joker___/">
+            <img class="social" src="./Assets/instagram.png" /> </a>  
+            <a href="https://github.com/at0512" > 
+                <img class="social" src="./Assets/github.png" alt="image" /> 
+                </a> 
+                <a href="https://www.linkedin.com/in/athul-raj-2692491b3/" > 
+                    <img class="social" src="./Assets/linkedin.png" alt="image" /> 
+                    </a>  
+                   
+        </div>
+    
+</footer> 
+  
+</body>
+</html>
